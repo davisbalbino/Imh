@@ -1,0 +1,117 @@
+
+:root{
+    --cor-roxo-header:  #250B40;
+    --cor-roxo-main: #FFF; 
+    --cor-roxo-shadow: #462469;
+}
+body{
+    margin: 0;
+}
+#head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor-roxo-header);
+    height: 7vh;
+    }
+.main{
+    width: 100%;
+    height: 95vh;
+    background-color: var(--cor-roxo-main);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#aulas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.aula{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    height: 15vh;
+    width: 95%;
+    margin-bottom: 1%;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 var(--cor-roxo-shadow);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px);
+    border-radius: 25px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.icon-user{
+    width: auto;
+    height: 90%;
+    border-radius: 100%;
+    box-shadow: 2px  1px 8px 5px rgb(77, 67, 67);
+    transition: all ease 0.5s;
+}
+.icon-user:hover{
+    width: auto;
+    height: 100%;
+ }
+.icon-arrow{
+    width: 30px;
+    height: 30px;
+    margin-right: 2%;
+    transition: all ease 0.5s;
+
+}
+table {
+    border-radius:8px ;
+    width: 50%;
+    border-collapse: collapse;
+    opacity: 1;
+
+  }
+  th, td {
+    border: 2px solid #444;
+    padding: 8px;
+    text-align: center;
+    border-radius:8px ;
+    background-color: white;
+  }
+  th {
+    background-color:  var(--cor-roxo-header);
+    color: white
+  }
+  .menu-lateral {
+    position: absolute;
+    height: 93%;
+    width: 0%;
+    background-color: white;
+    z-index: 999;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.5s ease; /* Corrected transition */
+}
+.menu-card{
+    opacity: 0;
+    transition: all 0.5s ease; /* Corrected transition */
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+li{
+
+    font-size: large;
+    text-decoration:underline;
+    cursor: pointer;
+}
